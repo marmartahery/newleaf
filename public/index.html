@@ -1,5 +1,7 @@
 <html>
   <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="style.css" />
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
@@ -10,16 +12,26 @@
       <div class="header-left">
         <a href="#home"><img src="/assets/NewLeafLogo.png" /></a>
       </div>
-      <div class="header-right">
+      <div class="header-right-expand">
         <h6><a href="#about">About Us</a></h6>
         <h6><a href="#services">Services</a></h6>
         <h6><a href="#reviews">Reviews</a></h6>
         <h6><a href="#guarantee">Our Guarantee</a></h6>
         <h6><a href="#contact">Contact</a></h6>
       </div>
+      <div id="myLinks" class="header-right-mobile">
+        <h6><a href="#about">About Us</a></h6>
+        <h6><a href="#services">Services</a></h6>
+        <h6><a href="#reviews">Reviews</a></h6>
+        <h6><a href="#guarantee">Our Guarantee</a></h6>
+        <h6><a href="#contact">Contact</a></h6>
+      </div>
+      <a class="mobile-hamburger" href="javascript:void(0);" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
     </div>
     <div class="hero-content">
-      <div id="hcg-slider-1" class="hcg-slider" style="z-index:1">
+      <div id="hcg-slider-1" class="hcg-slider" style="z-index: 1">
         <div class="hcg-slide-container">
           <div class="hcg-slider-body">
             <div class="hcg-slides animated" style="display: flex">
@@ -89,9 +101,6 @@
             etc.
           </p>
         </div>
-      </div>
-      <div style="height: 20px"></div>
-      <div class="services-card-container">
         <div class="services-card">
           <h3>Service Title</h3>
           <p>
@@ -231,6 +240,17 @@
     </div>
 
     <script>
+      function myFunction() {
+        var x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+          x.style.display = "none";
+        } else {
+          x.style.display = "block";
+        }
+      }
+
+      /////////////////////////////////////////////////////////////////////////////////////////////
+
       (() => {
         //If you want to add more images, add the link name and URL image URL in the array list below.
         const images_list = [
