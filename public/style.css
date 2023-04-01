@@ -26,6 +26,10 @@ body{
     z-index: 999;
 }
 
+.header #myLinks{
+    display: none;
+}
+
 .header-left{
     display: flex;
     align-items: center;
@@ -39,7 +43,7 @@ body{
     margin-right: 120px;
 }
 
-.header-right{
+.header-right-expand{
     display: flex;
     width: 800px;
     justify-content: space-between;
@@ -47,24 +51,29 @@ body{
     padding-right: 50px;
 }
 
-.header-right h6{
+.header-right-expand h6{
     color: white;
     font-size: 20px;
     text-align: right;
     
 }
 
-.header-right a{
+.header-right-expand a{
     color: white;
     font-size: 20px;
     text-align: right;
     text-decoration: none;
 }
 
-.header-right a:hover{
+.header-right-expand a:hover{
     text-shadow: 1px 1px 3px #343030;
     text-decoration: underline;
 }
+
+.mobile-hamburger{
+    display: none;
+}
+
 
 .hero-content{
     /* background-image: url('/assets/hero2.jpg');
@@ -163,7 +172,8 @@ body{
 
 .services-card-container{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .services-card{
@@ -174,6 +184,7 @@ body{
     height: 200px;
     text-align: center;
     box-shadow: 0px 0px 8px 1px #666161;
+    margin: 10px;
 }
 
 .services-card:hover{
@@ -223,9 +234,10 @@ body{
 
 .reviews-container{
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 1000px;
     margin: 0 auto;
+    overflow: scroll;
 }
 
 .review-info{
@@ -238,6 +250,7 @@ body{
     display: grid;
     align-items: center;
     box-shadow: 0px 0px 13px 2px #666161;
+    margin: 10px;
 }
 
 .review-info img{
@@ -276,15 +289,16 @@ body{
 }
 
 .guarantee-right{
-    width: 500px;
+    width: 700px;
     justify-content: space-between;
 }
 
 .guarantee-icons{
     /* width: 300px; */
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     margin: 0 auto;
+    flex-wrap: wrap;
 }
 
 .icon{
@@ -391,3 +405,134 @@ body{
 .fadeIn {
 	animation-name: fadeIn;
 }
+
+
+@media (max-width: 975px) {
+    .footer{
+        display: block;
+        padding: 20px 200px 20px 200px;
+        text-align: center;
+    }
+
+    .footer-services{
+        margin: 0 auto;
+    }
+
+    .footer-1, .footer-2, .footer-3, .footer-4{
+        margin-bottom: 40px;
+    }
+
+    .footer-1{
+        justify-content: center;
+    }
+
+    .hero-content h1{
+        width: 300px;
+    }
+
+    .hero-content h3{
+        width: 300px;
+        top: 30rem;
+    }
+
+    .about{
+        justify-content: center;
+    }
+
+    .about-text{
+        width: 300px;
+    }
+
+    .about-text h4{
+        width: 300px;
+        text-align: center;
+    }
+
+
+}
+
+
+@media (max-width: 950px ) {
+
+    .mobile-hamburger{
+        display: flex;
+        text-decoration: none;
+    }
+
+    .header-right-expand{
+        display: none;
+    }
+
+    /* Mobile */
+.header-right-mobile{
+    display: flex;
+    /* width: 800px; */
+    justify-content: space-between;
+    align-items: center;
+    /* padding-right: 50px; */
+    padding: 20px;
+    /* height: 310px; */
+    position: absolute;
+    background-color: #344E4180;
+    right: 0;
+    top: 100px;
+}
+
+.header-right-mobile h6{
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    margin: 5px;
+    
+}
+
+.header-right-mobile a{
+    color: white;
+    font-size: 20px;
+    text-align: right;
+    text-decoration: none;
+}
+
+.header-right-mobile a:hover{
+    text-shadow: 1px 1px 3px #343030;
+    text-decoration: underline;
+}
+
+.fa{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    font-size: 45px;
+    color: white;
+}
+
+
+}
+
+@media (max-width: 500px ) {
+    .reviews{
+        display: block;
+    }
+
+    .reviews-container{
+        width: 350px;
+        margin-top: 20px;
+    }
+
+    .footer-1, .footer-2, .footer-3, .footer-4{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .footer{
+        padding: 0;
+        padding-top: 20px;
+        padding-bottom: 20px;
+    }
+
+
+}
+
+
+
