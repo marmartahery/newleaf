@@ -408,6 +408,9 @@ body{
 
 
 @media (max-width: 975px) {
+    .about{
+        background-repeat: no-repeat;
+    }
     .footer{
         display: block;
         padding: 20px 200px 20px 200px;
@@ -529,6 +532,14 @@ body{
         padding: 0;
         padding-top: 20px;
         padding-bottom: 20px;
+    }
+
+    .guarantee-left{
+        display: none;
+    }
+
+    .hero-content h3{
+        top: 33rem;
     }
 
 
