@@ -538,8 +538,24 @@ body{
         display: none;
     }
 
+    .guarantee{
+        padding: 40px;
+    }
+
     .hero-content h3{
         top: 33rem;
+    }
+
+    .reviews-text{
+        width: 300px;
+    }
+
+    .reviews{
+        padding: 30px;
+    }
+
+    .hero-content{
+        border-radius: 0px;
     }
 
 
