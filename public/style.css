@@ -238,6 +238,8 @@ body{
     width: 1000px;
     margin: 0 auto;
     overflow: scroll;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .review-info{
@@ -345,8 +347,13 @@ body{
 
 .footer-services{
     width: 150px;
-    justify-content: space-between;
-    display: flex;
+    justify-content: center;
+    display: grid;
+
+}
+
+.footer-services h5{
+    margin: 10px;
 }
 
 .footer-3 h3{
