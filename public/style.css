@@ -541,17 +541,29 @@ body{
 }
 
 @media (max-width: 500px ) {
-    .fling-minislide img{
-        width: auto;
-        height: 30rem;
+    .header{
+        width: 100%;
     }
 
+    .hero-content{
+        width: 100%;
+    }
+
+    .fling-minislide{
+        width: 100%;
+    }
+
+    .fling-minislide img{
+        width: 100%;
+        height: 30rem;
+    }
+/* text */
     .about{
         padding: 40px;
     }
 
     .about-text{
-        background-color: transparent;
+        background-color: rgba(255, 255, 255, .6);
         background-size: cover;
         width: 300px;
     }
