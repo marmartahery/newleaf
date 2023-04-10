@@ -424,10 +424,23 @@ body{
 @media (max-width: 975px) {
     .about{
         background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .reviews{
+        display: block;
+        text-align: -webkit-center;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .reviews-text{
+        margin-right: 0;
+        margin-bottom: 20px;
     }
     .footer{
         display: block;
-        padding: 20px 200px 20px 200px;
+        padding: 20px;
         text-align: center;
     }
 
@@ -468,7 +481,7 @@ body{
 
 }
 
-
+/* ALTER THIS LATER */
 @media (max-width: 950px ) {
 
     .mobile-hamburger{
@@ -528,9 +541,44 @@ body{
 }
 
 @media (max-width: 500px ) {
+    .fling-minislide img{
+        width: auto;
+        height: 30rem;
+    }
+
+    .about{
+        padding: 40px;
+    }
+
+    .about-text{
+        background-color: transparent;
+        background-size: cover;
+        width: 300px;
+    }
+
+    .about-text h4{
+        width: auto;
+    }
+
+    .services{
+        padding: 40px;
+    }
+
     .reviews{
         display: block;
+        text-align: center;
     }
+
+    .reviews-text{
+        margin-right: 0;
+    }
+
+    .reviews-container{
+        display: grid;
+        justify-content: center;
+
+    }
+
 
     .reviews-container{
         width: 350px;
