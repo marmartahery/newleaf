@@ -180,11 +180,12 @@ body{
     background-color: white;
     border-radius: 10px;
     padding: 10px;
-    width: 200px;
-    height: 200px;
+    width: 250px;
+    height: 250px;
     text-align: center;
     box-shadow: 0px 0px 8px 1px #666161;
     margin: 10px;
+    cursor: default;
 }
 
 .services-card:hover{
@@ -194,6 +195,11 @@ body{
 .services-card h3{
     color: black;
     text-shadow: none;
+    /* margin: 5px; */
+}
+
+.services-card p{
+    margin: 5px;
 }
 
 .reviews{
@@ -270,14 +276,10 @@ body{
     background-repeat: no-repeat;
     background-attachment: fixed;
     padding: 40px 150px 40px 150px;
-    display: flex;
+    display: block;
     justify-content: space-between;
     border-radius: 0px 200rem 0px 0px;
     color: black;
-}
-
-.guarantee-left img{
-    border-radius: 10rem 10rem 0px 10rem;
 }
 
 .guarantee-text h1{
@@ -288,11 +290,6 @@ body{
 .guarantee-text p{
     font-weight: bold;
     line-height: 20pt;
-}
-
-.guarantee-right{
-    width: 700px;
-    justify-content: space-between;
 }
 
 .guarantee-icons{
@@ -311,10 +308,12 @@ body{
     text-align: center;
     border-radius: 20px;
     box-shadow: 0px 0px 12px 2px #666161;
+    width: 170px;
 }
 
 .icon h5{
-    margin: 0;
+    margin: 0 auto;
+    /* width: 80px; */
 }
 
 .icon img{
