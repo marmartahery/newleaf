@@ -76,13 +76,9 @@ body{
 
 
 .hero-content{
-    /* background-image: url('/assets/hero2.jpg');
-    background-size: cover;
-    background-repeat: no-repeat; */
-    /* padding: 300px 20px 200px 20px; */
     border-radius: 0px 0px 200rem 0px;
     margin-top: -10px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .hero-content img{
@@ -380,7 +376,7 @@ body{
     border-radius: 0px 0px 20rem 0px;
 }
 
-@keyframes fling-minislide {25%{opacity:1;} 50%{opacity:0;}}
+@keyframes fling-minislide {25%{opacity:1;} 40%{opacity:0;}}
 .fling-minislide img:nth-child(4){animation-delay:0s;}
 .fling-minislide img:nth-child(3){animation-delay:5s;}
 .fling-minislide img:nth-child(2){animation-delay:10s;}
