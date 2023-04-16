@@ -1,5 +1,6 @@
 html{
     scroll-behavior: smooth;
+    margin: 0 auto;
 }
 
 h1, h2, h3, h4, h5, h6, p{
@@ -7,7 +8,7 @@ h1, h2, h3, h4, h5, h6, p{
 }
 
 body{
-    margin: -10px;
+    margin: 0 auto;
     overflow-x: hidden;
 }
 
@@ -49,6 +50,7 @@ body{
     justify-content: space-between;
     align-items: center;
     padding-right: 50px;
+    z-index: 999;
 }
 
 .header-right-expand h6{
@@ -96,7 +98,7 @@ body{
     top: 21rem;
     left: 20px;
     animation: slideUp ease 1s forwards;
-    z-index: 999;
+    z-index: 9;
 }
 
 .hero-content h3{
@@ -108,7 +110,7 @@ body{
     top: 27rem;
     left: 20px;
     animation: slideUp ease 1s forwards;
-    z-index: 999;
+    z-index: 9;
 }
 
 .about{
@@ -542,7 +544,7 @@ body{
 
 @media (max-width: 500px ) {
     .header{
-        width: 87%;
+        width: 100%;
     }
 
     .header-left img{
@@ -566,7 +568,8 @@ body{
 
     .hero-content h1{
         margin-left: 0;
-        width: 100%;
+        margin-right: 0;
+        /* width: 100%; */
         text-align: center;
         top: 12rem;
         padding-left: 10px;
@@ -575,17 +578,19 @@ body{
 
     .hero-content h3{
         margin-left: 0;
+        margin-right: 0;
         text-align: center;
-        left: 0;
-        width: 100%;
+        /* left: 0; */
+        /* width: 100%; */
         padding-right: 10px;
         padding-left: 10px;
-        top: 19rem;
+        top: 18rem;
     }
 
 
     .about{
         padding: 40px;
+        margin-top: -19rem;
     }
 
     .about-text{
@@ -605,6 +610,7 @@ body{
     .reviews{
         display: block;
         text-align: center;
+        width: fit-content;
     }
 
     .reviews-text{
@@ -614,12 +620,7 @@ body{
     .reviews-container{
         display: grid;
         justify-content: center;
-
-    }
-
-
-    .reviews-container{
-        width: 350px;
+        width: 300px;
         margin-top: 20px;
     }
 
@@ -642,10 +643,6 @@ body{
         padding: 40px;
     }
 
-    .hero-content h3{
-        top: 33rem;
-    }
-
     .reviews-text{
         width: 300px;
     }
@@ -660,6 +657,7 @@ body{
 
 
 }
+
 
 
 
