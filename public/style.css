@@ -584,7 +584,7 @@ body{
         /* width: 100%; */
         padding-right: 10px;
         padding-left: 10px;
-        top: 18rem;
+        top: 20rem;
     }
 
 
@@ -597,14 +597,23 @@ body{
         background-color: rgba(255, 255, 255, .6);
         background-size: cover;
         width: 300px;
+        text-align: center;
     }
 
     .about-text h4{
         width: auto;
     }
 
+    .about-text h2{
+        text-align: center;
+    }
+
     .services{
         padding: 40px;
+    }
+
+    .services button{
+        color: black;
     }
 
     .reviews{
