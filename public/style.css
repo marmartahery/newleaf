@@ -561,7 +561,7 @@ body{
     }
 
     .fling-minislide img{
-        width: 103%;
+        /* width: 103%; */
         height: 30rem;
         border-radius: 0px;
     }
